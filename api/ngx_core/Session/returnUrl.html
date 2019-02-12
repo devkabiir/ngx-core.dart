@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="API docs for the returnUrl property from the Session class, for the Dart programming language.">
+  <title>returnUrl property - Session class - ngx_core library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="../..">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500,400i,400,300|Source+Sans+Pro:400,300,700" rel="stylesheet">
+  <link rel="stylesheet" href="static-assets/github.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="index.html">ngx_core</a></li>
+    <li><a href="ngx_core/ngx_core-library.html">ngx_core</a></li>
+    <li><a href="ngx_core/Session-class.html">Session</a></li>
+    <li class="self-crumb">returnUrl property</li>
+  </ol>
+  <div class="self-name">returnUrl</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5>Session class</h5>
+    <ol>
+      <li class="section-title"><a href="ngx_core/Session-class.html#constructors">Constructors</a></li>
+      <li><a href="ngx_core/Session/Session.html">Session</a></li>
+    
+      <li class="section-title">
+        <a href="ngx_core/Session-class.html#instance-properties">Properties</a>
+      </li>
+      <li><a href="ngx_core/Session/accessToken.html">accessToken</a></li>
+      <li><a href="ngx_core/Session/endPoint.html">endPoint</a></li>
+      <li><a href="ngx_core/Session/identity.html">identity</a></li>
+      <li><a href="ngx_core/Session/identityCookie.html">identityCookie</a></li>
+      <li><a href="ngx_core/Session/isGuest.html">isGuest</a></li>
+      <li><a href="ngx_core/Session/loginUrl.html">loginUrl</a></li>
+      <li><a href="ngx_core/Session/returnUrl.html">returnUrl</a></li>
+      <li class="inherited"><a href="ngx_core/Session/hashCode.html">hashCode</a></li>
+      <li class="inherited"><a href="ngx_core/Session/runtimeType.html">runtimeType</a></li>
+    
+      <li class="section-title"><a href="ngx_core/Session-class.html#instance-methods">Methods</a></li>
+      <li><a href="ngx_core/Session/logout.html">logout</a></li>
+      <li class="inherited"><a href="ngx_core/Session/noSuchMethod.html">noSuchMethod</a></li>
+      <li class="inherited"><a href="ngx_core/Session/toString.html">toString</a></li>
+    
+      <li class="section-title inherited"><a href="ngx_core/Session-class.html#operators">Operators</a></li>
+      <li class="inherited"><a href="ngx_core/Session/operator_equals.html">operator ==</a></li>
+    
+    
+    
+    </ol>
+  </div><!--/.sidebar-offcanvas-->
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+    <h1>returnUrl property</h1>
+
+
+        <section id="getter">
+        
+        <section class="multi-line-signature">
+          <span class="returntype">String</span>
+          <span class="name ">returnUrl</span>
+  
+</section>
+        
+        <section class="desc markdown">
+  <p>The URL that the user should be redirected to after login.</p>
+</section>
+<section class="summary source-code" id="source">
+  <h2><span>Implementation</span> </h2>
+  <pre class="language-dart"><code class="language-dart">String get returnUrl =&gt;
+    dom.window.sessionStorage[&#39;${_app.id}:session.returnUrl&#39;] ?? &#39;&#47;&#39;;</code></pre>
+</section>
+</section>
+        
+        <section id="setter">
+        
+        <section class="multi-line-signature">
+          <span class="returntype">void</span>
+            <span class="name ">returnUrl=</span>
+<span class="signature">(<wbr><span class="parameter" id="returnUrl=-param-value"><span class="type-annotation">String</span> <span class="parameter-name">value</span></span>)</span>
+          
+</section>
+        
+        <section class="summary source-code" id="source">
+  <h2><span>Implementation</span> </h2>
+  <pre class="language-dart"><code class="language-dart">set returnUrl(String value) =&gt;
+    dom.window.sessionStorage[&#39;${_app.id}:session.returnUrl&#39;] = value;</code></pre>
+</section>
+</section>
+          </div> <!-- /.main-content -->
+
+  <div class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    ngx_core 0.13.0
+  </span>
+
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/highlight.pack.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+
+
+</body>
+
+</html>

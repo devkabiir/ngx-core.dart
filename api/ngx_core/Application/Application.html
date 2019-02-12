@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="API docs for the Application constructor from the Class Application class from the ngx_core library, for the Dart programming language.">
+  <title>Application constructor - Application class - ngx_core library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="../..">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500,400i,400,300|Source+Sans+Pro:400,300,700" rel="stylesheet">
+  <link rel="stylesheet" href="static-assets/github.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="index.html">ngx_core</a></li>
+    <li><a href="ngx_core/ngx_core-library.html">ngx_core</a></li>
+    <li><a href="ngx_core/Application-class.html">Application</a></li>
+    <li class="self-crumb">Application constructor</li>
+  </ol>
+  <div class="self-name">Application</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5>Application class</h5>
+    <ol>
+      <li class="section-title"><a href="ngx_core/Application-class.html#constructors">Constructors</a></li>
+      <li><a href="ngx_core/Application/Application.html">Application</a></li>
+    
+      <li class="section-title">
+        <a href="ngx_core/Application-class.html#instance-properties">Properties</a>
+      </li>
+      <li><a href="ngx_core/Application/apiUrl.html">apiUrl</a></li>
+      <li><a href="ngx_core/Application/debug.html">debug</a></li>
+      <li><a href="ngx_core/Application/environment.html">environment</a></li>
+      <li><a href="ngx_core/Application/id.html">id</a></li>
+      <li><a href="ngx_core/Application/language.html">language</a></li>
+      <li><a href="ngx_core/Application/name.html">name</a></li>
+      <li><a href="ngx_core/Application/smoothScrollSupported.html">smoothScrollSupported</a></li>
+      <li><a href="ngx_core/Application/version.html">version</a></li>
+      <li class="inherited"><a href="ngx_core/Application/hashCode.html">hashCode</a></li>
+      <li class="inherited"><a href="ngx_core/Application/runtimeType.html">runtimeType</a></li>
+    
+      <li class="section-title"><a href="ngx_core/Application-class.html#instance-methods">Methods</a></li>
+      <li><a href="ngx_core/Application/useSecureConnection.html">useSecureConnection</a></li>
+      <li class="inherited"><a href="ngx_core/Application/noSuchMethod.html">noSuchMethod</a></li>
+      <li class="inherited"><a href="ngx_core/Application/toString.html">toString</a></li>
+    
+      <li class="section-title inherited"><a href="ngx_core/Application-class.html#operators">Operators</a></li>
+      <li class="inherited"><a href="ngx_core/Application/operator_equals.html">operator ==</a></li>
+    
+    
+    
+    </ol>
+  </div><!--/.sidebar-offcanvas-left-->
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+    <h1>Application constructor</h1>
+
+    <section class="multi-line-signature">
+      
+      <span class="name ">Application</span>(<wbr><span class="parameter" id="-param-appId"><span>@APP_ID</span> <span class="type-annotation">String</span> <span class="parameter-name">appId</span>, </span> <span class="parameter" id="-param-environment"><span>@Optional()</span> <span>@envToken</span> <span class="type-annotation">String</span> <span class="parameter-name">environment</span>, </span> <span class="parameter" id="-param-_configuration"><span class="type-annotation"><a href="ngx_core/Configuration-class.html">Configuration</a></span> <span class="parameter-name">_configuration</span>, </span> <span class="parameter" id="-param-_meta"><span class="type-annotation"><a href="ngx_core/Meta-class.html">Meta</a></span> <span class="parameter-name">_meta</span></span>)
+    </section>
+
+    <section class="desc markdown">
+      <p>Creates a new configuration service.</p>
+    </section>
+    
+    <section class="summary source-code" id="source">
+      <h2><span>Implementation</span> </h2>
+      <pre class="language-dart"><code class="language-dart">Application(@APP_ID String appId, @Optional() @envToken String environment,
+    this._configuration, this._meta)
+    : environment = environment ??
+          const String.fromEnvironment(&#39;env&#39;, defaultValue: &#39;development&#39;),
+      id = _configuration[&#39;id&#39;] ?? appId;</code></pre>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+  <div class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    ngx_core 0.13.0
+  </span>
+
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/highlight.pack.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ngx_core library API docs, for the Dart programming language.">
+  <title>ngx_core library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="..">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500,400i,400,300|Source+Sans+Pro:400,300,700" rel="stylesheet">
+  <link rel="stylesheet" href="static-assets/github.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="index.html">ngx_core</a></li>
+    <li class="self-crumb">ngx_core library</li>
+  </ol>
+  <div class="self-name">ngx_core</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5><span class="package-name">ngx_core</span> <span class="package-kind">package</span></h5>
+    <ol>
+          <li class="section-title">Libraries</li>
+          <li><a href="ngx_core/ngx_core-library.html">ngx_core</a></li>
+    </ol>
+  </div>
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+    <h1>ngx_core library </h1>
+
+    <section class="desc markdown">
+      <p>Core library for <a href="https://webdev.dartlang.org/angular">AngularDart</a> applications.</p>
+    </section>
+    
+    <section class="summary offset-anchor" id="classes">
+      <h2>Classes</h2>
+
+      <dl>
+        <dt id="Application">
+          <span class="name "><a href="ngx_core/Application-class.html">Application</a></span> 
+        </dt>
+        <dd>
+          Defines the methods and properties of the client application.
+        </dd>
+        <dt id="Configuration">
+          <span class="name "><a href="ngx_core/Configuration-class.html">Configuration</a></span> 
+        </dt>
+        <dd>
+          Provides access to the application configuration.
+        </dd>
+        <dt id="DocumentRef">
+          <span class="name "><a href="ngx_core/DocumentRef-class.html">DocumentRef</a></span> 
+        </dt>
+        <dd>
+          Provides access to the HTML document.
+        </dd>
+        <dt id="DocumentTitle">
+          <span class="name "><a href="ngx_core/DocumentTitle-class.html">DocumentTitle</a></span> 
+        </dt>
+        <dd>
+          Sets the title of the current document.
+        </dd>
+        <dt id="EncodeUriPipe">
+          <span class="name "><a href="ngx_core/EncodeUriPipe-class.html">EncodeUriPipe</a></span> 
+        </dt>
+        <dd>
+          Encodes strings using the percent-encoding.
+        </dd>
+        <dt id="GoBack">
+          <span class="name "><a href="ngx_core/GoBack-class.html">GoBack</a></span> 
+        </dt>
+        <dd>
+          Navigates to the previous page in the session history when the underlying control is clicked.
+        </dd>
+        <dt id="Identity">
+          <span class="name "><a href="ngx_core/Identity-class.html">Identity</a></span> 
+        </dt>
+        <dd>
+          An interface that should be implemented by a class providing identity information.
+        </dd>
+        <dt id="Meta">
+          <span class="name "><a href="ngx_core/Meta-class.html">Meta</a></span> 
+        </dt>
+        <dd>
+          Provides access to the metadata of the current document.
+        </dd>
+        <dt id="Nl2brPipe">
+          <span class="name "><a href="ngx_core/Nl2brPipe-class.html">Nl2brPipe</a></span> 
+        </dt>
+        <dd>
+          Replaces all line separators by HTML line breaks.
+        </dd>
+        <dt id="Session">
+          <span class="name "><a href="ngx_core/Session-class.html">Session</a></span> 
+        </dt>
+        <dd>
+          Manages the user sessions.
+        </dd>
+        <dt id="Title">
+          <span class="name "><a href="ngx_core/Title-class.html">Title</a></span> 
+        </dt>
+        <dd>
+          Manages the title of the current document.
+        </dd>
+      </dl>
+    </section>
+
+
+    <section class="summary offset-anchor" id="constants">
+      <h2>Constants</h2>
+
+      <dl class="properties">
+        <dt id="configToken" class="constant">
+          <span class="name "><a href="ngx_core/configToken-constant.html">configToken</a></span>
+          <span class="signature">&#8594; const OpaqueToken<span class="signature">&lt;<wbr><span class="type-parameter">Map<span class="signature">&lt;<wbr><span class="type-parameter">String</span>, <span class="type-parameter">dynamic</span>&gt;</span></span>&gt;</span></span>
+          </dt>
+        <dd>
+          The injection token representing the application configuration.
+          
+  <div>
+            <span class="signature"><code>const OpaqueToken&lt;Map&lt;String, dynamic&gt;&gt;(&#39;app.configuration&#39;)</code></span>
+          </div>
+        </dd>
+        <dt id="envToken" class="constant">
+          <span class="name "><a href="ngx_core/envToken-constant.html">envToken</a></span>
+          <span class="signature">&#8594; const OpaqueToken<span class="signature">&lt;<wbr><span class="type-parameter">String</span>&gt;</span></span>
+          </dt>
+        <dd>
+          The injection token representing the application environment.
+          
+  <div>
+            <span class="signature"><code>const OpaqueToken&lt;String&gt;(&#39;app.environment&#39;)</code></span>
+          </div>
+        </dd>
+        <dt id="ngxDirectives" class="constant">
+          <span class="name "><a href="ngx_core/ngxDirectives-constant.html">ngxDirectives</a></span>
+          <span class="signature">&#8594; const List</span>
+          </dt>
+        <dd>
+          A convenience list of all directives exposed by this library.
+          
+  <div>
+            <span class="signature"><code>const [DocumentTitle, GoBack]</code></span>
+          </div>
+        </dd>
+        <dt id="ngxPipes" class="constant">
+          <span class="name "><a href="ngx_core/ngxPipes-constant.html">ngxPipes</a></span>
+          <span class="signature">&#8594; const List</span>
+          </dt>
+        <dd>
+          A convenience list of all pipes exposed by this library.
+          
+  <div>
+            <span class="signature"><code>const [EncodeUriPipe, Nl2brPipe]</code></span>
+          </div>
+        </dd>
+        <dt id="ngxProviders" class="constant">
+          <span class="name "><a href="ngx_core/ngxProviders-constant.html">ngxProviders</a></span>
+          <span class="signature">&#8594; const Module</span>
+          </dt>
+        <dd>
+          A convenience list of all providers exposed by this library.
+          
+  <div>
+            <span class="signature"><code>const Module(provide: const [const ClassProvider(Application), const ClassProvider(Configuration), const ClassProvider(DocumentRef), const ClassProvider(Meta), const ClassProvider(Session), const Clas…</code></span>
+          </div>
+        </dd>
+      </dl>
+    </section>
+
+
+
+
+
+
+  </div> <!-- /.main-content -->
+
+  <div class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+    <h5>ngx_core library</h5>
+    <ol>
+      <li class="section-title"><a href="ngx_core/ngx_core-library.html#classes">Classes</a></li>
+      <li><a href="ngx_core/Application-class.html">Application</a></li>
+      <li><a href="ngx_core/Configuration-class.html">Configuration</a></li>
+      <li><a href="ngx_core/DocumentRef-class.html">DocumentRef</a></li>
+      <li><a href="ngx_core/DocumentTitle-class.html">DocumentTitle</a></li>
+      <li><a href="ngx_core/EncodeUriPipe-class.html">EncodeUriPipe</a></li>
+      <li><a href="ngx_core/GoBack-class.html">GoBack</a></li>
+      <li><a href="ngx_core/Identity-class.html">Identity</a></li>
+      <li><a href="ngx_core/Meta-class.html">Meta</a></li>
+      <li><a href="ngx_core/Nl2brPipe-class.html">Nl2brPipe</a></li>
+      <li><a href="ngx_core/Session-class.html">Session</a></li>
+      <li><a href="ngx_core/Title-class.html">Title</a></li>
+    
+    
+      <li class="section-title"><a href="ngx_core/ngx_core-library.html#constants">Constants</a></li>
+      <li><a href="ngx_core/configToken-constant.html">configToken</a></li>
+      <li><a href="ngx_core/envToken-constant.html">envToken</a></li>
+      <li><a href="ngx_core/ngxDirectives-constant.html">ngxDirectives</a></li>
+      <li><a href="ngx_core/ngxPipes-constant.html">ngxPipes</a></li>
+      <li><a href="ngx_core/ngxProviders-constant.html">ngxProviders</a></li>
+    
+    
+    
+    
+    
+    </ol>
+  </div><!--/sidebar-offcanvas-right-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    ngx_core 0.13.0
+  </span>
+
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/highlight.pack.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+
+
+</body>
+
+</html>
