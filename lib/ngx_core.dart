@@ -8,7 +8,7 @@ import 'package:angular/angular.dart';
 import 'package:angular_router/angular_router.dart';
 import 'package:biscuits/biscuits.dart' hide SimpleChange;
 
-part 'src/di.dart';
+part 'src/tokens.dart';
 part 'src/directives/document_title.dart';
 part 'src/directives/go_back.dart';
 part 'src/models/identity.dart';

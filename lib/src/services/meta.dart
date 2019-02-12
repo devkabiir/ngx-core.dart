@@ -8,11 +8,14 @@ class Meta {
 
   /// The short and accurate summary of the document's content.
   String get description => this['description'];
+  set description(String value) => this['description'] = value;
 
   /// The words relevant to the document's content.
   List<String> get keywords => this['keywords'] != null
       ? this['keywords'].split(',').map((keyword) => keyword.trim()).toList()
       : <String>[];
+
+  set keywords(List<String> values) => this['keywords'] = values.join(', ');
 
   /// The theme color.
   String get themeColor => this['theme-color'];
