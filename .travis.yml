@@ -1,0 +1,8 @@
+addons: {chrome: stable}
+dart: [dev, stable]
+dist: xenial
+language: dart
+notifications: {email: false}
+
+install: pub get
+script: pub run grinder test
