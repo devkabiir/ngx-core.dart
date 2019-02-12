@@ -3,7 +3,7 @@ part of '../../ngx_core.dart';
 /// Provides access to the HTML document.
 class DocumentRef {
   /// Appends a JavaScript file with a given [id] to the document.
-  Future<void> appendScript(String id, String src) {
+  Future<dom.Event> appendScript(String id, String src) {
     final script = dom.ScriptElement()
       ..async = true
       ..id = id;
@@ -14,7 +14,7 @@ class DocumentRef {
   }
 
   /// Appends a CSS stylesheet with a given [id] to the document.
-  Future<void> appendStylesheet(String id, String href) {
+  Future<dom.Event> appendStylesheet(String id, String href) {
     final stylesheet = dom.LinkElement()
       ..id = id
       ..rel = 'stylesheet';
@@ -25,7 +25,7 @@ class DocumentRef {
   }
 
   /// Appends an [element] to the document.
-  Future<void> _appendElement(dom.Element element) {
+  Future<dom.Event> _appendElement(dom.Element element) {
     final completer = Completer<dom.Event>();
     element
       ..onError.listen(completer.completeError)
