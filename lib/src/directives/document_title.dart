@@ -3,6 +3,7 @@ part of '../../ngx_core.dart';
 /// Sets the title of the current document.
 @Directive(exportAs: 'documentTitle', selector: '[documentTitle]')
 class DocumentTitle implements AfterViewInit {
+
   /// Creates a new `documentTitle` directive.
   DocumentTitle(this._element, this._title);
 
@@ -23,9 +24,7 @@ class DocumentTitle implements AfterViewInit {
   /// Method called when the component's view has been fully initialized.
   @override
   void ngAfterViewInit() {
-    final documentTitle = text.isNotEmpty
-        ? text
-        : _element.text.trim().replaceAll(RegExp(r'\s+'), ' ');
+    final documentTitle = text.isNotEmpty ? text : _element.text.trim().replaceAll(RegExp(r'\s+'), ' ');
     _title.setText(documentTitle, appendAppName: appendAppName);
   }
 }

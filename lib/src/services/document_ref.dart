@@ -2,6 +2,7 @@ part of '../../ngx_core.dart';
 
 /// Provides access to the HTML document.
 class DocumentRef {
+
   /// Appends a JavaScript file with a given [id] to the document.
   Future<dom.Event> appendScript(String id, String src) {
     final script = dom.ScriptElement()
@@ -32,8 +33,7 @@ class DocumentRef {
       ..onLoad.listen(completer.complete);
 
     final node = dom.document.getElementById(element.id);
-    if (node == null)
-      dom.document.head.append(element);
+    if (node == null) dom.document.head.append(element);
     else {
       node.parent.insertBefore(element, node);
       node.remove();

@@ -1,17 +1,13 @@
 part of '../../ngx_core.dart';
 
 /// Provides access to the application configuration.
-class Configuration extends Object with MapMixin<String, dynamic> {
-  // ignore: prefer_mixin
+class Configuration extends Object with MapMixin<String, dynamic> { // ignore: prefer_mixin
 
   /// Creates a new configuration service.
-  Configuration(@Optional() @configToken Map<String, dynamic> params)
-      : _params =
-            Map<String, dynamic>.from(params ?? const <String, dynamic>{});
+  Configuration(@Optional() @configToken Map<String, dynamic> params): _params = Map<String, dynamic>.from(params ?? const <String, dynamic>{});
 
   /// The handler of "changes" events.
-  final StreamController<Map<String, SimpleChange>> _onChanges =
-      StreamController<Map<String, SimpleChange>>.broadcast();
+  final StreamController<Map<String, SimpleChange>> _onChanges = StreamController<Map<String, SimpleChange>>.broadcast();
 
   /// The custom application parameters.
   final Map<String, dynamic> _params;
@@ -38,8 +34,7 @@ class Configuration extends Object with MapMixin<String, dynamic> {
   /// Removes all pairs from this configuration.
   @override
   void clear() {
-    final changes = Map<String, SimpleChange>.fromIterable(keys,
-        value: (key) => SimpleChange(this[key], null));
+    final changes = Map<String, SimpleChange>.fromIterable(keys, value: (key) => SimpleChange(this[key], null));
     _params.clear();
     _onChanges.add(changes);
   }
@@ -50,7 +45,6 @@ class Configuration extends Object with MapMixin<String, dynamic> {
   dynamic remove(Object key) {
     final previousValue = _params.remove(key);
     _onChanges.add({key: SimpleChange(previousValue, null)});
-
     return previousValue;
   }
 }

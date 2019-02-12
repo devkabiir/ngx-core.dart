@@ -2,8 +2,9 @@ part of '../../ngx_core.dart';
 
 /// Manages the title of the current document.
 class Title {
+  
   /// Creates a new title service.
-  Title(this._app) : _text = dom.document.title;
+  Title(this._app): _text = dom.document.title;
 
   /// The application properties.
   final Application _app;

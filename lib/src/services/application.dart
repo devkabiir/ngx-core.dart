@@ -2,12 +2,11 @@ part of '../../ngx_core.dart';
 
 /// Defines the methods and properties of the client application.
 class Application {
+
   /// Creates a new configuration service.
-  Application(@APP_ID String appId, @Optional() @envToken String environment,
-      this._configuration, this._meta)
-      : environment = environment ??
-            const String.fromEnvironment('env', defaultValue: 'development'),
-        id = _configuration['id'] ?? appId;
+  Application(@APP_ID String appId, @Optional() @envToken String environment, this._configuration, this._meta):
+    environment = environment ?? const String.fromEnvironment('env', defaultValue: 'development'),
+    id = _configuration['id'] ?? appId;
 
   /// The application settings.
   final Configuration _configuration;
@@ -16,14 +15,10 @@ class Application {
   final Meta _meta;
 
   /// The base URL of the remote services.
-  Uri get apiUrl => _configuration['apiUrl'] is String
-      ? Uri.tryParse(_configuration['apiUrl'])
-      : null;
+  Uri get apiUrl => _configuration['apiUrl'] is String ? Uri.tryParse(_configuration['apiUrl']) : null;
 
   /// Value indicating whether the application is running in debug mode.
-  bool get debug =>
-      _configuration['debug'] ??
-      const ['development', 'test'].contains(environment);
+  bool get debug => _configuration['debug'] ?? const ['development', 'test'].contains(environment);
 
   /// The application environment. Defaults to `"development"`.
   final String environment;
@@ -41,21 +36,15 @@ class Application {
 
   /// Value indicating whether smooth scrolling is supported.
   bool get smoothScrollSupported {
-    try {
-      return dom.document.documentElement.style.scrollBehavior != null;
-    } on Exception {
-      return false;
-    }
+    try { return dom.document.documentElement.style.scrollBehavior != null; }
+    on Exception { return false; }
   }
 
   /// The version number of the application package. Defaults to `"1.0"`.
-  String get version =>
-      _configuration['version'] ??
-      const String.fromEnvironment('version', defaultValue: '1.0');
+  String get version => _configuration['version'] ?? const String.fromEnvironment('version', defaultValue: '1.0');
 
   /// Forces the currently requested URL to use a secure channel (e.g. HTTPS).
   void useSecureConnection() {
-    if (Uri.base.scheme != 'https')
-      dom.window.location.assign(Uri.base.replace(scheme: 'https').toString());
+    if (Uri.base.scheme != 'https') dom.window.location.assign(Uri.base.replace(scheme: 'https').toString());
   }
 }
