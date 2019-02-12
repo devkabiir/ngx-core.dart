@@ -1,5 +1,5 @@
 name: ngx_core
-version: 0.12.0
+version: 0.13.0
 
 author: Cédric Belin <cedric@belin.io>
 description: Core library for AngularDart. Provides essential services for any Angular-based application.

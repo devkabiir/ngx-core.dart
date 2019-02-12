@@ -1,5 +1,8 @@
 # Changelog
 
+## Version [0.13.0](https://github.com/cedx/ngx-core.dart/compare/v0.12.0...v0.13.0)
+- Updated the package dependencies.
+
 ## Version [0.12.0](https://github.com/cedx/ngx-core.dart/compare/v0.11.0...v0.12.0)
 - Breaking change: removed the `Application.forceSsl` property.
 - Breaking change: removed the `ConfigToken` and `EnvToken` classes.
