@@ -1,8 +1,8 @@
-﻿name: ngx_core
+name: ngx_core
 version: 0.12.0
 
 author: Cédric Belin <cedric@belin.io>
-description: Core library for AngularDart applications. Provides essential services for any Angular-based application.
+description: Core library for AngularDart. Provides essential services for any Angular-based application.
 documentation: https://dev.belin.io/ngx-core.dart/api
 homepage: https://dev.belin.io/ngx-core.dart
 issue_tracker: https://github.com/cedx/ngx-core.dart/issues
@@ -18,9 +18,9 @@ dependencies:
 
 dev_dependencies:
   angular_test: ^2.2.0
-  build_runner: ^1.1.3
-  build_test: ^0.10.5
-  build_web_compilers: ^1.0.0
+  build_runner: ^1.2.3 # 1.2.5
+  build_test: ^0.10.6
+  build_web_compilers: ^1.1.0
   coveralls: ^5.1.0
   grinder: ^0.8.3
-  test: ^1.5.2
+  test: ^1.5.3
