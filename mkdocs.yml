@@ -1,5 +1,5 @@
 site_name: Core library for AngularDart
-site_description: General purpose library for Angular, implemented in Dart.
+site_description: General purpose library for Angular applications, implemented in Dart.
 site_author: Cédric Belin - cedric@belin.io
 site_url: https://dev.belin.io/ngx-core.dart
 

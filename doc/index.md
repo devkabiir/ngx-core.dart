@@ -1,7 +1,7 @@
 # Core library <small>for AngularDart</small>
 ![AngularDart](img/angular.png)
 
-General purpose library for [Angular](https://webdev.dartlang.org/angular), implemented in [Dart](https://www.dartlang.org).
+General purpose library for [Angular](https://webdev.dartlang.org/angular) applications, implemented in [Dart](https://www.dartlang.org).
 
 !!! danger
     This library is targeted toward the [author](https://belin.io)'s applications.
